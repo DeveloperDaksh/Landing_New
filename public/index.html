@@ -7,6 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       rel="stylesheet"
@@ -22,10 +23,10 @@
     <script src="js/main.js"></script>
   </head>
   <body class="antialiased bg-body text-body font-body">
-    <div class="">
+    <div class=>
       <section class="skewed-bottom-right">
-        <nav
-          class="relative px-6 py-6 flex justify-between items-center bg-gray-50"
+        <nav 
+          class="relative px-4 py-2 shadow flex justify-between items-center  bg-blue-50"
         >
           <a class="text-3xl font-bold leading-none" href="/">
             <img
@@ -50,11 +51,72 @@
           <ul
             class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
           >
-            <li>
+            <li class="-ml-96">
               <a
-                class="text-sm text-gray-400 hover:text-gray-500"
+                class="text-sm font-bold text-blue-900 hover:text-gray-500"
                 href="signup.html"
-                >Start</a
+                >START</a
+              >
+            </li>
+            <li class="text-blue-900">
+              <svg
+                class="w-4 h-4 current-fill"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewbox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                ></path>
+              </svg>
+            </li>
+            <li>
+              <a class="text-sm text-blue-900 font-bold" href="#">ABOUT US</a>
+            </li>
+            <li class="text-blue-1100">
+              <svg
+                class="w-4 h-4 current-fill"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewbox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                ></path>
+              </svg>
+            </li>
+            <li>
+              <a class="text-sm font-bold  text-blue-900 hover:text-gray-500" href="#"
+                >SERVICES</a
+              >
+            </li>
+            <li class="text-blue-900">
+              <svg
+                class="w-4 h-4 current-fill"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewbox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                ></path>
+              </svg>
+            </li>
+            <li>
+              <a class="text-sm font-bold text-blue-900 hover:text-gray-500" href="#"
+                >PLATFORM</a
               >
             </li>
             <li class="text-gray-800">
@@ -74,69 +136,8 @@
               </svg>
             </li>
             <li>
-              <a class="text-sm text-blue-1000 font-bold" href="#">About Us</a>
-            </li>
-            <li class="text-gray-800">
-              <svg
-                class="w-4 h-4 current-fill"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewbox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </li>
-            <li>
-              <a class="text-sm text-gray-400 hover:text-gray-500" href="#"
-                >Services</a
-              >
-            </li>
-            <li class="text-gray-800">
-              <svg
-                class="w-4 h-4 current-fill"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewbox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </li>
-            <li>
-              <a class="text-sm text-gray-400 hover:text-gray-500" href="#"
-                >Platform</a
-              >
-            </li>
-            <li class="text-gray-800">
-              <svg
-                class="w-4 h-4 current-fill"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewbox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </li>
-            <li>
-              <a class="text-sm text-gray-400 hover:text-gray-500" href="#"
-                >Testimonials</a
+              <a class="text-sm font-bold text-blue-900 hover:text-gray-500" href="#"
+                >TESTIMONIALS</a
               >
             </li>
           </ul>
@@ -146,13 +147,13 @@
             >Log In</a
           >
         </nav>
-        <div class="bg-gray-50 pt-12 lg:pt-20 pb-20 radius-for-skewed">
-          <div class="container mx-auto px-4">
+        <div class=" pt-12 lg:pt-20 pb-20 bg-white radius-for-skewed">
+          <div class="container  mx-auto px-4">
             <div class="flex flex-wrap -mx-4">
               <div
-                class="w-full lg:w-1/2 px-4 mb-12 md:mb-20 lg:mb-0 flex items-center"
+                class="w-full  lg:w-1/2 px-4 mb-12 md:mb-20 lg:mb-0 flex items-center"
               >
-                <div class="w-full text-center lg:text-left">
+                <div class="w-full text-center lg:text-left ">
                   <div class="max-w-md mx-auto lg:mx-0">
                     <h2
                       class="mb-3 text-4xl lg:text-5xl font-bold font-heading"
@@ -266,37 +267,37 @@
               <ul>
                 <li class="mb-1">
                   <a
-                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-blue-1000 rounded"
+                    class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-1000 rounded"
                     href="signup.html"
-                    >Start</a
+                    >START</a
                   >
                 </li>
                 <li class="mb-1">
                   <a
-                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-blue-1000 rounded"
+                    class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-1000 rounded"
                     href="#"
-                    >About Us</a
+                    >ABOUT US</a
                   >
                 </li>
                 <li class="mb-1">
                   <a
-                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-blue-1000 rounded"
+                    class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-1000 rounded"
                     href="#"
-                    >Services</a
+                    >SERVICES</a
                   >
                 </li>
                 <li class="mb-1">
                   <a
-                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-blue-1000 rounded"
+                    class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-1000 rounded"
                     href="#"
-                    >Platform</a
+                    >PLATFORM</a
                   >
                 </li>
                 <li class="mb-1">
                   <a
-                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-blue-1000 rounded"
+                    class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-1000 rounded"
                     href="#"
-                    >Testimonials</a
+                    >TESTIMONIALS</a
                   >
                 </li>
               </ul>
@@ -304,7 +305,7 @@
             <div class="mt-auto">
               <div class="pt-6">
                 <a
-                  class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-l-xl rounded-t-xl"
+                  class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 text-blue-900 hover:bg-gray-100 rounded-l-xl rounded-t-xl"
                   href="#"
                   >Sign In</a
                 ><a
@@ -556,7 +557,7 @@
             <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
           </svg>
         </div>
-        <div class="py-20 bg-gray-50 radius-for-skewed">
+        <div class="py-20 bg-white radius-for-skewed">
           <div class="container mx-auto px-4">
             <div class="max-w-2xl mx-auto text-center mb-16">
               <span class="text-blue-1000 font-bold"
