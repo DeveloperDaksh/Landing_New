@@ -63,11 +63,11 @@
               <button  @click="isOpen=!isOpen"  class=" block text-sm font-bold outline-none  focus:outline-none  text-blue-900 " href="#">
                 SERVICES</button>
               
-              <div 
-                class="right-0 p-2 mt-1 bg-white rounded-md shadow lg:absolute"
+              <div id="dropdown-menu"
+                class="right-0 p-2 mt-0 bg-white rounded-md shadow lg:absolute"
                 :class="{'hidden':!isOpen'flex flex-col':isOpen}"
                 @click.away="isOpen = false">
-                <ul id="dropdown-menu" class="space-y-2 lg:w-48">
+                <ul  class="space-y-2 lg:w-48">
                   <li>
                 <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">lorem ipsum</a></li>
                 <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">lorem ipsum</a></li>
