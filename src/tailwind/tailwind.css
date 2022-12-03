@@ -40,12 +40,6 @@
   border-bottom-left-radius: 6rem;
 }
 
+ 
 
 
-
-#dropdown:hover #dropdown-content{
-  display: block;
-}
-.dropdown-content {
-  display: none;
-}

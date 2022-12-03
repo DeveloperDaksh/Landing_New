@@ -63,15 +63,18 @@
               <button  @click="isOpen=!isOpen"  class=" block text-sm font-bold outline-none  focus:outline-none  text-blue-900 " href="#">
                 SERVICES</button>
               
-              <div id="dropdown-content"
+              <div 
                 class="right-0 p-2 mt-1 bg-white rounded-md shadow lg:absolute"
                 :class="{'hidden':!isOpen'flex flex-col':isOpen}"
                 @click.away="isOpen = false">
-                <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Categories</a>
+                <ul id="dropdown-menu" class="space-y-2 lg:w-48">
+                  <li>
+                <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">lorem ipsum</a></li>
+                <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">lorem ipsum</a></li>
 
-          <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Inventories</a>
+          <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">lorem ipsum</a></li>
                  
- <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Brands</a>
+                </ul>
                  </div>
             </li>
            
@@ -533,8 +536,11 @@
             <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
           </svg>
         </div>
+
+
         <div class="py-20 bg-white radius-for-skewed">
-          <div class="container mx-auto px-4">
+
+ <div class="container mx-auto px-4">
             <div class="max-w-2xl mx-auto text-center mb-16">
               <span class="text-blue-900 font-bold"
                 >Dolor sit amet consectutar</span
@@ -844,6 +850,56 @@
             </div>
           </div>
         </div>
+
+
+
+        <div class="py-20 bg-white radius-for-skewed">
+
+          <div class="container mx-auto px-4">
+                     <div class="max-w-2xl mx-auto text-center mb-16">
+                       
+                       <h2 class="mb-2 text-4xl lg:text-5xl font-bold font-heading">
+                        Product Features
+                       </h2>
+                       
+                       
+                     </div>
+                     <div class="flex flex-wrap -mx-4">
+                       <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
+                         <div class="p-8 bg-white shadow rounded">
+                           <h4 class="mb-2 text-2xl font-bold font-heading">lorem ipsum</h4>
+                           
+                           
+                          
+                         </div>
+                       </div>
+                       <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
+                         <div class="p-8 bg-blue-900 shadow rounded">
+                           <h4 class="mb-2 text-2xl font-bold text-white">
+                             lorem ipsum
+                           </h4>
+                           
+                           
+                           
+                         </div>
+                       </div>
+                       <div class="w-full lg:w-1/3 px-4">
+                         <div class="p-8 bg-white shadow rounded">
+                           <h4 class="mb-2 text-2xl font-bold font-heading">
+                             lorem ipsum
+                           </h4>
+                          
+                          
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+
+
+
+
+
         <div class="skew skew-bottom mr-for-radius">
           <svg
             class="h-8 md:h-12 lg:h-20 w-full text-gray-50"
