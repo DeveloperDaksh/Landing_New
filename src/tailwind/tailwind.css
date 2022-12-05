@@ -60,14 +60,14 @@
 .material-icons.blue900 { color: #1e3a8a; }
 
 #bcircle{
-  width: 300px;
-  height: 300px;
-  border: 1px solid #ccc;
+  width: 330px;
+  height: 330px;
+  border: 1px solid #1e3a8a;
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 10rem;
+  bottom: 15rem;
   right: 0;
-  left: 0;
+  left: 15rem;
   margin: auto;
   border-radius: 50%;
 }
@@ -99,8 +99,109 @@
    } 
 }
 
-/* @keyframes circle{
-  {
-    transform: rotate: ;;
+@keyframes circle{
+  0%{
+    transform: rotate(0deg)translate(-165px)rotate(0deg);
   }
-} */
+  100%{
+    transform: rotate(360deg)translate(-165px)rotate(-360deg);
+  }
+}
+
+#bcircletwo{
+  width: 330px;
+  height: 330px;
+  border: 1px solid #1e3a8a;
+  position: absolute;
+  top: 10rem;
+  bottom: 15rem;
+  right: 15rem;
+  left: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+#scircletwo{
+  width: 30px;
+  height: 30px;
+  background: #1e3a8a;
+  border-radius: 50%;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   overflow: hidden;
+   margin: auto;
+   -webkit-animation: circle 5s linear infinite;
+   animation: circle 5s linear infinite;
+
+}
+
+
+@-webkit-keyframes circle{
+   0%{
+    transform: rotate(0deg)translate(-165px)rotate(0deg);
+   }
+   100%{
+    transform: rotate(3600deg)translate(-165px)rotate(-360deg);
+   } 
+}
+
+@keyframes circle{
+  0%{
+    transform: rotate(0deg)translate(-165px)rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg)translate(-165px)rotate(-360deg);
+  }
+}
+
+#bcirclethree{
+  width: 330px;
+  height: 330px;
+  border: 1px solid #1e3a8a;
+  position: absolute;
+  top: 20rem;
+  bottom: 15rem;
+  right: 15rem;
+  left: 9rem;
+  margin: auto;
+  border-radius: 50%;
+}
+
+#scirclethree{
+  width: 30px;
+  height: 30px;
+  background: #1e3a8a;
+  border-radius: 50%;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   overflow: hidden;
+   margin: auto;
+   -webkit-animation: circle 5s linear infinite;
+   animation: circle 5s linear infinite;
+
+}
+
+
+@-webkit-keyframes circle{
+   0%{
+    transform: rotate(0deg)translate(-165px)rotate(0deg);
+   }
+   100%{
+    transform: rotate(3600deg)translate(-165px)rotate(-360deg);
+   } 
+}
+
+@keyframes circle{
+  0%{
+    transform: rotate(0deg)translate(-165px)rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg)translate(-165px)rotate(-360deg);
+  }
+}
