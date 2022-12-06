@@ -62,14 +62,15 @@
 #bcircle{
   width: 330px;
   height: 330px;
-  border: 1px solid #1e3a8a;
+  border: 2px solid #1e3a8a;
   position: absolute;
-  top: 10rem;
+  top: 15rem;
   bottom: 15rem;
   right: 0;
-  left: 15rem;
+  left: 17rem;
   margin: auto;
   border-radius: 50%;
+  
 }
 
 #scircle{
@@ -111,12 +112,12 @@
 #bcircletwo{
   width: 330px;
   height: 330px;
-  border: 1px solid #1e3a8a;
+  border: 2px solid #1e3a8a;
   position: absolute;
-  top: 10rem;
+  top: 15rem;
   bottom: 15rem;
-  right: 15rem;
-  left: 0;
+  right: 20rem;
+  left: 60rem;
   margin: auto;
   border-radius: 50%;
 }
@@ -160,12 +161,12 @@
 #bcirclethree{
   width: 330px;
   height: 330px;
-  border: 1px solid #1e3a8a;
+  border: 2px solid #1e3a8a;
   position: absolute;
-  top: 20rem;
+  top: 30rem;
   bottom: 15rem;
   right: 15rem;
-  left: 9rem;
+  left: 52rem;
   margin: auto;
   border-radius: 50%;
 }
