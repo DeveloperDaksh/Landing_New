@@ -206,3 +206,7 @@
     transform: rotate(360deg)translate(-165px)rotate(-360deg);
   }
 }
+
+#signupcolors{
+  background-color: #1e3a8a;
+}
