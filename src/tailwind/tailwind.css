@@ -40,26 +40,33 @@
   border-bottom-left-radius: 6rem;
 }
 
- 
-
-
 #dropdown-menu {
   display: none;
 }
 
-#dropdown:hover #dropdown-menu{
+#dropdown:hover #dropdown-menu {
   display: block;
 }
 
 /* Rules for sizing the icon. */
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
 
-.material-icons.blue900 { color: #1e3a8a; }
+.material-icons.blue900 {
+  color: #1e3a8a;
+}
 
-#bcircle{
+#bcircle {
   width: 330px;
   height: 330px;
   border: 2px solid #1e3a8a;
@@ -70,46 +77,43 @@
   left: 17rem;
   margin: auto;
   border-radius: 50%;
-  
 }
 
-#scircle{
+#scircle {
   width: 30px;
   height: 30px;
   background: #1e3a8a;
   border-radius: 50%;
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   overflow: hidden;
-   margin: auto;
-   -webkit-animation: circle 5s linear infinite;
-   animation: circle 5s linear infinite;
-
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  margin: auto;
+  -webkit-animation: circle 5s linear infinite;
+  animation: circle 5s linear infinite;
 }
 
-
-@-webkit-keyframes circle{
-   0%{
-    transform: rotate(0deg)translate(-165px)rotate(0deg);
-   }
-   100%{
-    transform: rotate(3600deg)translate(-165px)rotate(-360deg);
-   } 
-}
-
-@keyframes circle{
-  0%{
-    transform: rotate(0deg)translate(-165px)rotate(0deg);
+@-webkit-keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-165px) rotate(0deg);
   }
-  100%{
-    transform: rotate(360deg)translate(-165px)rotate(-360deg);
+  100% {
+    transform: rotate(3600deg) translate(-165px) rotate(-360deg);
   }
 }
 
-#bcircletwo{
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-165px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-165px) rotate(-360deg);
+  }
+}
+
+#bcircletwo {
   width: 330px;
   height: 330px;
   border: 2px solid #1e3a8a;
@@ -122,43 +126,41 @@
   border-radius: 50%;
 }
 
-#scircletwo{
+#scircletwo {
   width: 30px;
   height: 30px;
   background: #1e3a8a;
   border-radius: 50%;
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   overflow: hidden;
-   margin: auto;
-   -webkit-animation: circle 5s linear infinite;
-   animation: circle 5s linear infinite;
-
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  margin: auto;
+  -webkit-animation: circle 5s linear infinite;
+  animation: circle 5s linear infinite;
 }
 
-
-@-webkit-keyframes circle{
-   0%{
-    transform: rotate(0deg)translate(-165px)rotate(0deg);
-   }
-   100%{
-    transform: rotate(3600deg)translate(-165px)rotate(-360deg);
-   } 
-}
-
-@keyframes circle{
-  0%{
-    transform: rotate(0deg)translate(-165px)rotate(0deg);
+@-webkit-keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-165px) rotate(0deg);
   }
-  100%{
-    transform: rotate(360deg)translate(-165px)rotate(-360deg);
+  100% {
+    transform: rotate(3600deg) translate(-165px) rotate(-360deg);
   }
 }
 
-#bcirclethree{
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-165px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-165px) rotate(-360deg);
+  }
+}
+
+#bcirclethree {
   width: 330px;
   height: 330px;
   border: 2px solid #1e3a8a;
@@ -171,42 +173,61 @@
   border-radius: 50%;
 }
 
-#scirclethree{
+#scirclethree {
   width: 30px;
   height: 30px;
   background: #1e3a8a;
   border-radius: 50%;
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   overflow: hidden;
-   margin: auto;
-   -webkit-animation: circle 5s linear infinite;
-   animation: circle 5s linear infinite;
-
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  margin: auto;
+  -webkit-animation: circle 5s linear infinite;
+  animation: circle 5s linear infinite;
 }
 
-
-@-webkit-keyframes circle{
-   0%{
-    transform: rotate(0deg)translate(-165px)rotate(0deg);
-   }
-   100%{
-    transform: rotate(3600deg)translate(-165px)rotate(-360deg);
-   } 
-}
-
-@keyframes circle{
-  0%{
-    transform: rotate(0deg)translate(-165px)rotate(0deg);
+@-webkit-keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-165px) rotate(0deg);
   }
-  100%{
-    transform: rotate(360deg)translate(-165px)rotate(-360deg);
+  100% {
+    transform: rotate(3600deg) translate(-165px) rotate(-360deg);
   }
 }
 
-#signupcolors{
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-165px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-165px) rotate(-360deg);
+  }
+}
+
+#signupcolors {
   background-color: #1e3a8a;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 375px)  {
+  #bcircle{
+    display: none;
+  }
+  #scircle{
+    display: none;
+  }
+  #bcircletwo{
+    display: none;
+  }
+  #scircletwo{
+    display: none;
+  }
+  #bcirclethree{
+    display: none;
+  }
+  #scirclethree{
+    display: none;
+  }
 }
