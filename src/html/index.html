@@ -7,11 +7,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
     />
+    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
     <link rel="stylesheet" href="css/tailwind/tailwind.min.css" />
     <link
       rel="icon"
@@ -22,15 +24,15 @@
     <script src="js/main.js"></script>
   </head>
   <body class="antialiased bg-body text-body font-body">
-    <div class="">
+    <div class=>
       <section class="skewed-bottom-right">
-        <nav
-          class="relative px-6 py-6 flex justify-between items-center bg-gray-50"
+        <nav 
+          class="relative px-4 py-2 shadow flex justify-between items-center  bg-blue-50"
         >
           <a class="text-3xl font-bold leading-none" href="/">
             <img
               style="width: 150px; height: 100px"
-              src="https://res.cloudinary.com/daboha8rt/image/upload/v1669445719/mortagesaas/Engageall_r9ivxa_1_p66q9d.png"
+              src="atis-assets/logo/atis/Engageall.svg"
               alt=""
               width="auto"
             />
@@ -48,117 +50,110 @@
             </button>
           </div>
           <ul
-            class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
+            class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto  lg:items-center lg:w-auto lg:space-x-6"
           >
+            <li class="-ml-40 px-4">
+              <a
+                class="text-sm font-bold text-blue-900 "
+                href="signup.html"
+                >START</a
+              >
+            </li>
+           
+            <li id="dropdown" class="relative" x-data="{isOpen:false}">
+              <button  @click="isOpen=!isOpen"  class=" block text-sm font-bold outline-none  focus:outline-none  text-blue-900 " href="#">
+                SERVICES </button>
+                
+              
+              <div id="dropdown-menu"
+                class="right-0 p-2 mt-0 bg-white rounded-md shadow lg:absolute"
+                :class="{'hidden':!isOpen'flex flex-col':isOpen}"
+                @click.away="isOpen = false">
+                <ul  class="space-y-2 lg:w-48">
+                  <li>
+                <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">lorem ipsum</a></li>
+                <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">lorem ipsum</a></li>
+
+          <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">lorem ipsum</a></li>
+                 
+                </ul>
+                 </div>
+                
+            </li>
+           
+            <span class="material-icons md-18 blue900 ">
+              keyboard_arrow_down
+              </span>
+           
+            
+           
+            <li>
+              <a class="text-sm font-bold  text-blue-900 " href="#"
+                >ABOUT US</a
+              >
+            </li>
+           
+            <li>
+              <a class="text-sm font-bold text-blue-900 " href="#"
+                >PLATFORM</a
+              >
+            </li>
+            <span class="material-icons md-18 blue900 ">
+              keyboard_arrow_down
+              </span>
+            <!-- <li class="text-gray-800">
+              <svg
+                class="w-4 h-4 current-fill"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewbox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                ></path>
+              </svg>
+            </li> -->
+            <li>
+              <a class="text-sm font-bold text-blue-900" href="#"
+                >TESTIMONIALS</a
+              >
+            </li>
+            <span class="material-icons md-18 blue900 ">
+              keyboard_arrow_down
+              </span>
+            
             <li>
               <a
-                class="text-sm text-gray-400 hover:text-gray-500"
-                href="signup.html"
-                >Start</a
-              >
+            class="hidden lg:inline-block py-2 px-6   text-sm text-blue-900 font-bold  "
+            href="#"
+            >BOOK A DEMO</a
+          >
             </li>
-            <li class="text-gray-800">
-              <svg
-                class="w-4 h-4 current-fill"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewbox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </li>
-            <li>
-              <a class="text-sm text-blue-1000 font-bold" href="#">About Us</a>
-            </li>
-            <li class="text-gray-800">
-              <svg
-                class="w-4 h-4 current-fill"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewbox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </li>
-            <li>
-              <a class="text-sm text-gray-400 hover:text-gray-500" href="#"
-                >Services</a
-              >
-            </li>
-            <li class="text-gray-800">
-              <svg
-                class="w-4 h-4 current-fill"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewbox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </li>
-            <li>
-              <a class="text-sm text-gray-400 hover:text-gray-500" href="#"
-                >Platform</a
-              >
-            </li>
-            <li class="text-gray-800">
-              <svg
-                class="w-4 h-4 current-fill"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewbox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                ></path>
-              </svg>
-            </li>
-            <li>
-              <a class="text-sm text-gray-400 hover:text-gray-500" href="#"
-                >Testimonials</a
-              >
-            </li>
+            
           </ul>
           <a
-            class="hidden lg:inline-block py-2 px-6 bg-white hover:bg-gray-50 text-sm text-blue-1000 font-bold rounded-l-xl rounded-t-xl transition duration-200"
+            class="hidden lg:inline-block py-2 px-6 bg-blue-900 hover:bg-blue-900 text-sm text-white font-bold rounded-l-xl rounded-t-xl transition duration-200"
             href="https://mortgagesaas.netlify.app/authentication/login"
             >Log In</a
           >
         </nav>
-        <div class="bg-gray-50 pt-12 lg:pt-20 pb-20 radius-for-skewed">
-          <div class="container mx-auto px-4">
+        <div class=" pt-12 lg:pt-20 pb-20 bg-white radius-for-skewed">
+          <div class="container  mx-auto px-4">
             <div class="flex flex-wrap -mx-4">
               <div
-                class="w-full lg:w-1/2 px-4 mb-12 md:mb-20 lg:mb-0 flex items-center"
+                class="w-full  lg:w-1/2 px-4 mb-12 md:mb-20 lg:mb-0 flex items-center"
               >
-                <div class="w-full text-center lg:text-left">
+                <div class="w-full text-center lg:text-left ">
                   <div class="max-w-md mx-auto lg:mx-0">
                     <h2
                       class="mb-3 text-4xl lg:text-5xl font-bold font-heading"
                     >
                       <span>Build &amp; Launch without</span>
-                      <span class="text-blue-1000">problems</span>
+                      <span class="text-blue-900">problems</span>
                     </h2>
                   </div>
                   <div class="max-w-sm mx-auto lg:mx-0">
@@ -168,7 +163,7 @@
                     </p>
                     <div>
                       <a
-                        class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-blue-1000 hover:bg-blue-1000 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
+                        class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-blue-900 hover:bg-blue-900 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
                         href="signup.html"
                         >Get Started</a
                       ><a
@@ -183,19 +178,31 @@
               <div
                 class="w-full lg:w-1/2 px-4 flex items-center justify-center"
               >
-                <div class="relative" style="z-index: 0">
-                  <img
-                    class="h-128 w-full max-w-lg object-cover rounded-3xl md:rounded-br-none"
-                    src="https://images.unsplash.com/photo-1462826303086-329426d1aef5?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80"
-                    alt=""
-                  />
-                  <img
-                    class="hidden md:block absolute"
-                    style="top: -2rem; right: 3rem; z-index: -1"
-                    src="atis-assets/elements/green-dark-up.svg"
-                    alt=""
-                  />
-                  <img
+                
+                  <div id="bcircle">
+                    <div id="scircle">
+
+                    </div>
+                  </div> 
+                  <div id="bcircletwo" >
+                    <div id="scircletwo">
+
+                    </div>
+                  </div>
+                  <div id="bcirclethree" >
+                    <div id="scirclethree">
+
+                    </div>
+                  </div>
+                  <div class="relative" style="z-index: 0">
+                    <img
+                      class="h-72 w-72 max-w-lg object-cover rounded-3xl md:rounded-br-none"
+                      src="https://images.unsplash.com/photo-1462826303086-329426d1aef5?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80"
+                      alt=""
+                    />
+                  </div>
+                 
+                  <!-- <img
                     class="hidden md:block absolute"
                     style="bottom: -2rem; right: -2rem; z-index: -1"
                     src="atis-assets/elements/wing-green-down.svg"
@@ -212,8 +219,8 @@
                     style="bottom: 2.5rem; left: -4.5rem; z-index: -1"
                     src="atis-assets/elements/bullets-gray-left.svg"
                     alt=""
-                  />
-                </div>
+                  /> -->
+               
               </div>
             </div>
           </div>
@@ -266,37 +273,68 @@
               <ul>
                 <li class="mb-1">
                   <a
-                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-blue-1000 rounded"
+                    class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-900 rounded"
                     href="signup.html"
-                    >Start</a
+                    >START</a
                   >
                 </li>
                 <li class="mb-1">
                   <a
-                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-blue-1000 rounded"
+                    class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-900 rounded"
                     href="#"
-                    >About Us</a
+                    >ABOUT US</a
+                  >
+                </li>
+                <li id="dropdown" class="mb-1" x-data="{isOpen:false}">
+                  
+                  <a
+                  class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-900 rounded"
+                  href="#"
+                  >SERVICES <span class="material-icons md-24 blue900 ">
+                    keyboard_arrow_down
+                    </span></a
+                >
+                    
+                    <div id="dropdown-menu"
+                      class="right-0 p-2 mt-0 bg-white rounded-md shadow lg:absolute"
+                      :class="{'hidden':!isOpen'flex flex-col':isOpen}"
+                      @click.away="isOpen = false">
+                      <ul  class="space-y-2 lg:w-48">
+                        <li>
+                      <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">lorem ipsum</a></li>
+                      <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">lorem ipsum</a></li>
+      
+                <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">lorem ipsum</a></li>
+                       
+                      </ul>
+                       </div>
+                      
+                  </li>
+                 
+                 
+                </li>
+                
+                <li class="mb-1">
+                  <a
+                    class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-900 rounded"
+                    href="#"
+                    >PLATFORM</a
                   >
                 </li>
                 <li class="mb-1">
                   <a
-                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-blue-1000 rounded"
+                    class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-900 rounded"
                     href="#"
-                    >Services</a
+                    >TESTIMONIALS <span class="material-icons md-24 blue900 ">
+                      keyboard_arrow_down
+                      </span></a
                   >
                 </li>
                 <li class="mb-1">
                   <a
-                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-blue-1000 rounded"
+                    class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-900 rounded"
                     href="#"
-                    >Platform</a
-                  >
-                </li>
-                <li class="mb-1">
-                  <a
-                    class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-blue-1000 rounded"
-                    href="#"
-                    >Testimonials</a
+                    >BOOK A DEMO</a
                   >
                 </li>
               </ul>
@@ -304,11 +342,11 @@
             <div class="mt-auto">
               <div class="pt-6">
                 <a
-                  class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-l-xl rounded-t-xl"
+                  class="block px-4 py-3 mb-3  text-xs text-center font-semibold leading-none bg-gray-50 text-blue-900 hover:bg-gray-100 rounded-l-xl rounded-t-xl"
                   href="#"
                   >Sign In</a
                 ><a
-                  class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-1000 hover:bg-blue-1000 rounded-l-xl rounded-t-xl"
+                  class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-900 hover:bg-blue-900 rounded-l-xl rounded-t-xl"
                   href="#"
                   >Sign Up</a
                 >
@@ -356,7 +394,7 @@
             <div class="flex flex-wrap items-center">
               <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
                 <div class="max-w-md lg:mx-auto">
-                  <span class="text-blue-1000 font-bold"
+                  <span class="text-blue-900 font-bold"
                     >Dolor sit amet consectutar</span
                   >
                   <h2 class="my-2 text-4xl lg:text-5xl font-bold font-heading">
@@ -420,7 +458,7 @@
                   <div class="mb-8 py-6 pl-6 pr-4 shadow rounded bg-white">
                     <span class="mb-4 inline-block p-3 rounded-lg bg-green-100">
                       <svg
-                        class="w-10 h-10 text-blue-1000"
+                        class="w-10 h-10 text-blue-900"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewbox="0 0 24 24"
@@ -444,7 +482,7 @@
                   <div class="py-6 pl-6 pr-4 shadow rounded bg-white">
                     <span class="mb-4 inline-block p-3 rounded-lg bg-green-100">
                       <svg
-                        class="w-10 h-10 text-blue-1000"
+                        class="w-10 h-10 text-blue-900"
                         xmlns="http://www.w3.org/2000/svg"
                         viewbox="0 0 20 20"
                         fill="currentColor"
@@ -466,7 +504,7 @@
                   <div class="mb-8 py-6 pl-6 pr-4 shadow rounded-lg bg-white">
                     <span class="mb-4 inline-block p-3 rounded bg-green-100">
                       <svg
-                        class="w-10 h-10 text-blue-1000"
+                        class="w-10 h-10 text-blue-900"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewbox="0 0 24 24"
@@ -490,7 +528,7 @@
                   <div class="py-6 pl-6 pr-4 shadow rounded-lg bg-white">
                     <span class="mb-4 inline-block p-3 rounded bg-green-100">
                       <svg
-                        class="w-10 h-10 text-blue-1000"
+                        class="w-10 h-10 text-blue-900"
                         xmlns="http://www.w3.org/2000/svg"
                         viewbox="0 0 20 20"
                         fill="currentColor"
@@ -556,10 +594,13 @@
             <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
           </svg>
         </div>
-        <div class="py-20 bg-gray-50 radius-for-skewed">
-          <div class="container mx-auto px-4">
+
+
+        <div class="py-20 bg-white radius-for-skewed">
+
+ <div class="container mx-auto px-4">
             <div class="max-w-2xl mx-auto text-center mb-16">
-              <span class="text-blue-1000 font-bold"
+              <span class="text-blue-900 font-bold"
                 >Dolor sit amet consectutar</span
               >
               <h2 class="mb-2 text-4xl lg:text-5xl font-bold font-heading">
@@ -593,7 +634,7 @@
                   <ul class="mb-6 text-gray-500">
                     <li class="mb-2 flex">
                       <svg
-                        class="mr-2 w-5 h-5 text-blue-1000"
+                        class="mr-2 w-5 h-5 text-blue-900"
                         xmlns="http://www.w3.org/2000/svg"
                         viewbox="0 0 20 20"
                         fill="currentColor"
@@ -608,7 +649,7 @@
                     </li>
                     <li class="mb-2 flex">
                       <svg
-                        class="mr-2 w-5 h-5 text-blue-1000"
+                        class="mr-2 w-5 h-5 text-blue-900"
                         xmlns="http://www.w3.org/2000/svg"
                         viewbox="0 0 20 20"
                         fill="currentColor"
@@ -623,7 +664,7 @@
                     </li>
                     <li class="mb-2 flex">
                       <svg
-                        class="mr-2 w-5 h-5 text-blue-1000"
+                        class="mr-2 w-5 h-5 text-blue-900"
                         xmlns="http://www.w3.org/2000/svg"
                         viewbox="0 0 20 20"
                         fill="currentColor"
@@ -638,7 +679,7 @@
                     </li>
                     <li class="mb-2 flex">
                       <svg
-                        class="mr-2 w-5 h-5 text-blue-1000"
+                        class="mr-2 w-5 h-5 text-blue-900"
                         xmlns="http://www.w3.org/2000/svg"
                         viewbox="0 0 20 20"
                         fill="currentColor"
@@ -653,7 +694,7 @@
                     </li>
                     <li class="mb-2 flex">
                       <svg
-                        class="mr-2 w-5 h-5 text-blue-1000"
+                        class="mr-2 w-5 h-5 text-blue-900"
                         xmlns="http://www.w3.org/2000/svg"
                         viewbox="0 0 20 20"
                         fill="currentColor"
@@ -668,14 +709,14 @@
                     </li>
                   </ul>
                   <a
-                    class="inline-block text-center py-2 px-4 w-full rounded-l-xl rounded-t-xl bg-blue-1000 hover:bg-blue-700 text-white font-bold leading-loose transition duration-200"
+                    class="inline-block text-center py-2 px-4 w-full rounded-l-xl rounded-t-xl bg-blue-900 hover:bg-blue-700 text-white font-bold leading-loose transition duration-200"
                     href="#"
                     >Get Started</a
                   >
                 </div>
               </div>
               <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div class="p-8 bg-blue-1000 shadow rounded">
+                <div class="p-8 bg-blue-900 shadow rounded">
                   <h4 class="mb-2 text-2xl font-bold text-white">
                     Intermediate
                   </h4>
@@ -783,7 +824,7 @@
                   <ul class="mb-6 text-gray-500">
                     <li class="mb-2 flex">
                       <svg
-                        class="mr-2 w-5 h-5 text-blue-1000"
+                        class="mr-2 w-5 h-5 text-blue-900"
                         xmlns="http://www.w3.org/2000/svg"
                         viewbox="0 0 20 20"
                         fill="currentColor"
@@ -798,7 +839,7 @@
                     </li>
                     <li class="mb-2 flex">
                       <svg
-                        class="mr-2 w-5 h-5 text-blue-1000"
+                        class="mr-2 w-5 h-5 text-blue-900"
                         xmlns="http://www.w3.org/2000/svg"
                         viewbox="0 0 20 20"
                         fill="currentColor"
@@ -813,7 +854,7 @@
                     </li>
                     <li class="mb-2 flex">
                       <svg
-                        class="mr-2 w-5 h-5 text-blue-1000"
+                        class="mr-2 w-5 h-5 text-blue-900"
                         xmlns="http://www.w3.org/2000/svg"
                         viewbox="0 0 20 20"
                         fill="currentColor"
@@ -828,7 +869,7 @@
                     </li>
                     <li class="mb-2 flex">
                       <svg
-                        class="mr-2 w-5 h-5 text-blue-1000"
+                        class="mr-2 w-5 h-5 text-blue-900"
                         xmlns="http://www.w3.org/2000/svg"
                         viewbox="0 0 20 20"
                         fill="currentColor"
@@ -843,7 +884,7 @@
                     </li>
                     <li class="mb-2 flex">
                       <svg
-                        class="mr-2 w-5 h-5 text-blue-1000"
+                        class="mr-2 w-5 h-5 text-blue-900"
                         xmlns="http://www.w3.org/2000/svg"
                         viewbox="0 0 20 20"
                         fill="currentColor"
@@ -858,7 +899,7 @@
                     </li>
                   </ul>
                   <a
-                    class="inline-block text-center py-2 px-4 w-full rounded-l-xl rounded-t-xl bg-blue-1000 hover:bg-blue-1000 text-white font-bold leading-loose transition duration-200"
+                    class="inline-block text-center py-2 px-4 w-full rounded-l-xl rounded-t-xl bg-blue-900 hover:bg-blue-900 text-white font-bold leading-loose transition duration-200"
                     href="#"
                     >Get Started</a
                   >
@@ -867,6 +908,80 @@
             </div>
           </div>
         </div>
+
+
+
+        <div class="py-20 bg-gray-50 radius-for-skewed">
+
+          <div class="container mx-auto px-4">
+                     <div class="max-w-2xl mx-auto text-center mb-16">
+                       
+                       <h2 class="mb-2 text-4xl lg:text-5xl font-bold font-heading">
+                        Product Features
+                       </h2>
+                       
+                       
+                     </div>
+                     <div class="flex flex-wrap -mx-4">
+                       <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
+                         <div class="p-8 bg-white m-2 shadow rounded">
+                           <h4 class="mb-2 text-2xl font-bold font-heading">lorem ipsum</h4>
+                           
+                           
+                          
+                         </div>
+                       </div>
+                       <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
+                         <div class="p-8 bg-blue-900 m-2 shadow rounded">
+                           <h4 class="mb-2 text-2xl font-bold text-white">
+                             lorem ipsum
+                           </h4>
+                           
+                           
+                           
+                         </div>
+                       </div>
+                       <div class="w-full lg:w-1/3 px-4">
+                         <div class="p-8 bg-white m-2 shadow rounded">
+                           <h4 class="mb-2 text-2xl font-bold font-heading">
+                             lorem ipsum
+                           </h4>
+                          
+                          
+                         </div>
+                       </div>
+                       <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
+                        <div class="p-8 bg-white m-2 shadow rounded">
+                          <h4 class="mb-2 text-2xl font-bold font-heading">lorem ipsum</h4>
+                          
+                          
+                         
+                        </div>
+                      </div>
+                      <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
+                        <div class="p-8 bg-white m-2 shadow rounded">
+                          <h4 class="mb-2 text-2xl font-bold font-heading">lorem ipsum</h4>
+                          
+                          
+                         
+                        </div>
+                      </div>
+                      <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
+                        <div class="p-8 bg-white m-2 shadow rounded">
+                          <h4 class="mb-2 text-2xl font-bold font-heading">lorem ipsum</h4>
+                          
+                          
+                         
+                        </div>
+                      </div>
+                     </div>
+                   </div>
+                 </div>
+
+
+
+
+
         <div class="skew skew-bottom mr-for-radius">
           <svg
             class="h-8 md:h-12 lg:h-20 w-full text-gray-50"
@@ -1027,7 +1142,7 @@
                         >
                       </label>
                       <button
-                        class="inline-block py-2 px-6 rounded-l-xl rounded-t-xl bg-blue-1000 hover:bg-blue-700 text-gray-50 font-bold leading-loose transition duration-200"
+                        class="inline-block py-2 px-6 rounded-l-xl rounded-t-xl bg-blue-900 hover:bg-blue-700 text-gray-50 font-bold leading-loose transition duration-200"
                       >
                         Get Started
                       </button>
