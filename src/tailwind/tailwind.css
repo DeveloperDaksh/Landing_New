@@ -67,8 +67,8 @@
 }
 
 #bcircle {
-  width: 330px;
-  height: 330px;
+  width: 300px;
+  height: 300px;
   border: 2px solid #1e3a8a;
   position: absolute;
   top: 15rem;
@@ -114,8 +114,8 @@
 }
 
 #bcircletwo {
-  width: 330px;
-  height: 330px;
+  width: 300px;
+  height: 300px;
   border: 2px solid #1e3a8a;
   position: absolute;
   top: 15rem;
@@ -161,8 +161,8 @@
 }
 
 #bcirclethree {
-  width: 330px;
-  height: 330px;
+  width: 300px;
+  height: 300px;
   border: 2px solid #1e3a8a;
   position: absolute;
   top: 30rem;
@@ -211,23 +211,23 @@
   background-color: #1e3a8a;
 }
 
-@media only screen and (max-width: 1280px) and (min-width: 375px)  {
-  #bcircle{
+@media only screen and (max-width: 1280px) and (min-width: 375px) {
+  #bcircle {
     display: none;
   }
-  #scircle{
+  #scircle {
     display: none;
   }
-  #bcircletwo{
+  #bcircletwo {
     display: none;
   }
-  #scircletwo{
+  #scircletwo {
     display: none;
   }
-  #bcirclethree{
+  #bcirclethree {
     display: none;
   }
-  #scirclethree{
+  #scirclethree {
     display: none;
   }
 }
