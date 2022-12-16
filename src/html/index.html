@@ -59,10 +59,9 @@
                 >START</a
               >
             </li>
-           
             <li id="dropdown" class="relative" x-data="{isOpen:false}">
               <button  @click="isOpen=!isOpen"  class=" block text-sm font-bold outline-none  focus:outline-none  text-blue-900 " href="#">
-                SERVICES </button>
+               COMPANY </button>
                 
               
               <div id="dropdown-menu"
@@ -71,10 +70,39 @@
                 @click.away="isOpen = false">
                 <ul  class="space-y-2 lg:w-48">
                   <li>
-                <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">lorem ipsum</a></li>
-                <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">lorem ipsum</a></li>
+                <a href="team.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Our Team</a></li>
+                <li><a href="careers.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black"> Careers</a></li>
 
-          <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">lorem ipsum</a></li>
+          <li><a href="news.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">News</a></li>
+          
+          
+                 
+                </ul>
+                 </div>
+                
+            </li>
+            <span class="material-icons md-18 blue900 ">
+              keyboard_arrow_down
+              </span>
+           
+            <li id="dropdown" class="relative" x-data="{isOpen:false}">
+              <button  @click="isOpen=!isOpen"  class=" block text-sm font-bold outline-none  focus:outline-none  text-blue-900 " href="#">
+                RESOURCES </button>
+                
+              
+              <div id="dropdown-menu"
+                class="right-0 p-2 mt-0 bg-white rounded-md shadow lg:absolute"
+                :class="{'hidden':!isOpen'flex flex-col':isOpen}"
+                @click.away="isOpen = false">
+                <ul  class="space-y-2 lg:w-48">
+                  <li>
+                <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Resources</a></li>
+                <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Marketing kit</a></li>
+
+          <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Events</a></li>
+          
+          <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Blog</a></li>
+          <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Spend Calculator</a></li>
                  
                 </ul>
                  </div>
@@ -84,20 +112,31 @@
             <span class="material-icons md-18 blue900 ">
               keyboard_arrow_down
               </span>
+              <li id="dropdown" class="relative" x-data="{isOpen:false}">
+                <button  @click="isOpen=!isOpen"  class=" block text-sm font-bold outline-none  focus:outline-none  text-blue-900 " href="#">
+                  PRODUCTS </button>
+                  
+                
+                <div id="dropdown-menu"
+                  class="right-0 p-2 mt-0 bg-white rounded-md shadow lg:absolute"
+                  :class="{'hidden':!isOpen'flex flex-col':isOpen}"
+                  @click.away="isOpen = false">
+                  <ul  class="space-y-2 lg:w-48">
+                    <li>
+                  <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Dealers</a></li>
+                  <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black"> Enterprise</a></li>
+  
+            
+                   
+                  </ul>
+                   </div>
+                  
+              </li>
+            
            
             
            
-            <li>
-              <a class="text-sm font-bold  text-blue-900 " href="#"
-                >ABOUT US</a
-              >
-            </li>
            
-            <li>
-              <a class="text-sm font-bold text-blue-900 " href="#"
-                >PLATFORM</a
-              >
-            </li>
             <span class="material-icons md-18 blue900 ">
               keyboard_arrow_down
               </span>
@@ -280,19 +319,36 @@
                     >START</a
                   >
                 </li>
-                <li class="mb-1">
+                <li id="dropdown" class="mb-1">
                   <a
                     class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-900 rounded"
                     href="#"
-                    >ABOUT US</a
+                    >COMPANY <span class="material-icons md-24 blue900 ">
+                      keyboard_arrow_down
+                      </span></a
                   >
+                  <div id="dropdown-menu"
+                      class="right-0 p-2 mt-0 bg-white rounded-md shadow lg:absolute"
+                      :class="{'hidden':!isOpen'flex flex-col':isOpen}"
+                      @click.away="isOpen = false">
+                      <ul  class="space-y-2 lg:w-48">
+                        <li>
+                          <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Our Team</a></li>
+                          <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Careers</a></li>
+          
+                    <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">News</a></li>
+                    
+                    
+                       
+                      </ul>
+                       </div>
                 </li>
                 <li id="dropdown" class="mb-1" x-data="{isOpen:false}">
                   
                   <a
                   class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-900 rounded"
                   href="#"
-                  >SERVICES <span class="material-icons md-24 blue900 ">
+                  >RESOURCES <span class="material-icons md-24 blue900 ">
                     keyboard_arrow_down
                     </span></a
                 >
@@ -303,10 +359,13 @@
                       @click.away="isOpen = false">
                       <ul  class="space-y-2 lg:w-48">
                         <li>
-                      <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">lorem ipsum</a></li>
-                      <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">lorem ipsum</a></li>
-      
-                <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">lorem ipsum</a></li>
+                          <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Resources</a></li>
+                          <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Marketing kit</a></li>
+          
+                    <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Events</a></li>
+                    
+                    <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Blog</a></li>
+                    <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Spend Calculator</a></li>
                        
                       </ul>
                        </div>
@@ -316,12 +375,28 @@
                  
                 </li>
                 
-                <li class="mb-1">
+                <li id="dropdown" class="mb-1">
                   <a
                     class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-900 rounded"
                     href="#"
-                    >PLATFORM</a
-                  >
+                    >PRODUCTS
+                    <span class="material-icons md-24 blue900 ">
+                      keyboard_arrow_down
+                      </span></a
+                  > 
+                  <div id="dropdown-menu"
+                      class="right-0 p-2 mt-0 bg-white rounded-md shadow lg:absolute"
+                      :class="{'hidden':!isOpen'flex flex-col':isOpen}"
+                      @click.away="isOpen = false">
+                      <ul  class="space-y-2 lg:w-48">
+                        <li>
+                          <a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Dealers</a></li>
+                          <li><a href="#" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Enterprise</a></li>
+          
+                    
+                       
+                      </ul>
+                       </div>
                 </li>
                 <li class="mb-1">
                   <a
