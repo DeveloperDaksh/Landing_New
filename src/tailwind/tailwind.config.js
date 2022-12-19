@@ -15,7 +15,6 @@ module.exports = {
       black: "#000",
       white: "#fff",
 
-      
       gray: {
         50: "#f9fafb",
         100: "#f3f4f6",
@@ -175,7 +174,7 @@ module.exports = {
     },
     borderColor: (theme) => ({
       ...theme("colors"),
-      DEFAULT: "#e5e7eb",
+      DEFAULT: "#1e3a8a",
     }),
     borderRadius: {
       none: "0",
