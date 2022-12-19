@@ -1,3 +1,32 @@
+// Database connection starts here
+
+
+// const express = require("express");
+// const app = express();
+// require("./db/config");
+// const Demo = require("./db/models/Demo");
+
+// const port = process.env.PORT || 3001;
+
+// app.get("/", (req, res) => {
+//   res.send("Hello");
+// });
+
+// app.post("#demoform", async (res, req) => {
+//   try {
+//     console.log(req.body.firstname);
+//   } catch (e) {
+//     res.statusCode(400).send(e);
+//   }
+// });
+
+// app.listen(port, () => {
+//   console.log(`server is running on port ${port}`);
+// });
+
+
+
+
 // Burger menus
 document.addEventListener("DOMContentLoaded", function () {
   // open
@@ -39,18 +68,3 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Database connection starts here
-
-const exppress = require("express");
-const app = express();
-require("./db/config");
-
-const port = process.env.PORT || 3000;
-
-app.get("/", (req, res) => {
-  res.send("Hello");
-});
-
-app.listen(port, () => {
-  console.log(`server is running on port ${port}`);
-});
