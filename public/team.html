@@ -4,9 +4,619 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Our Team</title>
+    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css" />
 </head>
 <body>
-    Add Content here!
+    <!-- nav -->
+<div>
+    <section class="skewed-bottom-right">
+        <nav 
+          class="relative px-4 py-2 shadow flex justify-between items-center  bg-blue-50"
+        >
+          <a class="text-3xl font-bold leading-none" href="/">
+            <img
+              style="width: 150px; height: 100px"
+              src="atis-assets/logo/atis/Engageall.svg"
+              alt=""
+              width="auto"
+            />
+          </a>
+          <div class="lg:hidden">
+            <button class="navbar-burger flex items-center text-gray-400 p-3">
+              <svg
+                class="block h-4 w-4 fill-current"
+                viewbox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Mobile menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+              </svg>
+            </button>
+          </div>
+          <ul
+            class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto  lg:items-center lg:w-auto lg:space-x-6"
+          >
+            <li class="-ml-40 px-4">
+              <a
+                class="text-sm font-bold text-blue-900 "
+                href="signup.html"
+                >START</a
+              >
+            </li>
+            <li id="dropdown" class="relative" x-data="{isOpen:false}">
+              <button  @click="isOpen=!isOpen"  class=" block text-sm font-bold outline-none  focus:outline-none  text-blue-900 " href="#">
+               COMPANY </button>
+                
+              
+              <div id="dropdown-menu"
+                class="right-0 p-2 mt-0 bg-white rounded-md shadow lg:absolute"
+                :class="{'hidden':!isOpen'flex flex-col':isOpen}"
+                @click.away="isOpen = false">
+                <ul  class="space-y-2 lg:w-48">
+                  <li>
+                <a href="team.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Our Team</a></li>
+                <li><a href="careers.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black"> Careers</a></li>
+
+          <li><a href="news.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">News</a></li>
+          
+          
+                 
+                </ul>
+                 </div>
+                
+            </li>
+            <span class="material-icons md-18 blue900 ">
+              keyboard_arrow_down
+              </span>
+           
+            <li id="dropdown" class="relative" x-data="{isOpen:false}">
+              <button  @click="isOpen=!isOpen"  class=" block text-sm font-bold outline-none  focus:outline-none  text-blue-900 " href="#">
+                RESOURCES </button>
+                
+              
+              <div id="dropdown-menu"
+                class="right-0 p-2 mt-0 bg-white rounded-md shadow lg:absolute"
+                :class="{'hidden':!isOpen'flex flex-col':isOpen}"
+                @click.away="isOpen = false">
+                <ul  class="space-y-2 lg:w-48">
+                  <li>
+                <a href="resources.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Resources</a></li>
+                <li><a href="marketing.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Marketing kit</a></li>
+
+          <li><a href="events.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Events</a></li>
+          
+          <li><a href="blog.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Blog</a></li>
+          <li><a href="spendcalculator.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Spend Calculator</a></li>
+                 
+                </ul>
+                 </div>
+                
+            </li>
+           
+            <span class="material-icons md-18 blue900 ">
+              keyboard_arrow_down
+              </span>
+              <li id="dropdown" class="relative" x-data="{isOpen:false}">
+                <button  @click="isOpen=!isOpen"  class=" block text-sm font-bold outline-none  focus:outline-none  text-blue-900 " href="#">
+                  PRODUCTS </button>
+                  
+                
+                <div id="dropdown-menu"
+                  class="right-0 p-2 mt-0 bg-white rounded-md shadow lg:absolute"
+                  :class="{'hidden':!isOpen'flex flex-col':isOpen}"
+                  @click.away="isOpen = false">
+                  <ul  class="space-y-2 lg:w-48">
+                    <li>
+                  <a href="dealers.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Dealers</a></li>
+                  <li><a href="enterprise.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black"> Enterprise</a></li>
+  
+            
+                   
+                  </ul>
+                   </div>
+                  
+              </li>
+            
+           
+            
+           
+           
+            <span class="material-icons md-18 blue900 ">
+              keyboard_arrow_down
+              </span>
+            <!-- <li class="text-gray-800">
+              <svg
+                class="w-4 h-4 current-fill"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewbox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                ></path>
+              </svg>
+            </li> -->
+            <li>
+              <a class="text-sm font-bold text-blue-900" href="#"
+                >TESTIMONIALS</a
+              >
+            </li>
+            
+            
+            <li>
+              <a
+            class="hidden lg:inline-block py-2 px-6   text-sm text-blue-900 font-bold  "
+            href="#"
+            >BOOK A DEMO</a
+          >
+            </li>
+            
+          </ul>
+          <a
+            class="hidden lg:inline-block py-2 px-6 bg-blue-900 hover:bg-blue-900 text-sm text-white font-bold rounded-l-xl rounded-t-xl transition duration-200"
+            href="https://mortgagesaas.netlify.app/authentication/login"
+            >Log In</a
+          >
+        </nav>
+        <div class=" pt-12 lg:pt-20 pb-20 bg-white radius-for-skewed">
+          <div class="container  mx-auto px-4">
+            <div class="flex flex-wrap -mx-4">
+              <div
+                class="w-full  lg:w-1/2 px-4 mb-12 md:mb-20 lg:mb-0 flex items-center"
+              >
+               
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="mr-for-radius">
+          <svg
+            class="h-8 md:h-12 lg:h-20 w-full text-gray-50"
+            viewbox="0 0 10 10"
+            preserveaspectratio="none"
+          >
+            <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
+          </svg>
+        </div>
+        <div
+          class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50"
+        >
+          <div
+            class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"
+          ></div>
+          <nav
+            class="relative flex flex-col py-6 px-6 h-full w-full bg-white border-r overflow-y-auto"
+          >
+            <div class="flex items-center mb-8">
+              <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                <img
+                  style="width: 150px; height: 100px"
+                  src="atis-assets/logo/atis/Engageall.svg"
+                  alt=""
+                  width="auto"
+                />
+              </a>
+              <button class="navbar-close">
+                <svg
+                  class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewbox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div>
+              <ul>
+                <li class="mb-1">
+                  <a
+                    class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-900 rounded"
+                    href="signup.html"
+                    >START</a
+                  >
+                </li>
+                <li id="dropdown" class="mb-1">
+                  <a
+                    class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-900 rounded"
+                    href="#"
+                    >COMPANY <span class="material-icons md-24 blue900 ">
+                      keyboard_arrow_down
+                      </span></a
+                  >
+                  <div id="dropdown-menu"
+                      class="right-0 p-2 mt-0 bg-white rounded-md shadow lg:absolute"
+                      :class="{'hidden':!isOpen'flex flex-col':isOpen}"
+                      @click.away="isOpen = false">
+                      <ul  class="space-y-2 lg:w-48">
+                        <li>
+                          <a href="team.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Our Team</a></li>
+                          <li><a href="careers.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Careers</a></li>
+          
+                    <li><a href="news.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">News</a></li>
+                    
+                    
+                       
+                      </ul>
+                       </div>
+                </li>
+                <li id="dropdown" class="mb-1" x-data="{isOpen:false}">
+                  
+                  <a
+                  class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-900 rounded"
+                  href="#"
+                  >RESOURCES <span class="material-icons md-24 blue900 ">
+                    keyboard_arrow_down
+                    </span></a
+                >
+                    
+                    <div id="dropdown-menu"
+                      class="right-0 p-2 mt-0 bg-white rounded-md shadow lg:absolute"
+                      :class="{'hidden':!isOpen'flex flex-col':isOpen}"
+                      @click.away="isOpen = false">
+                      <ul  class="space-y-2 lg:w-48">
+                        <li>
+                          <a href="resources.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Resources</a></li>
+                          <li><a href="marketing.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Marketing kit</a></li>
+          
+                    <li><a href="events.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Events</a></li>
+                    
+                    <li><a href="blog.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Blog</a></li>
+                    <li><a href="spendcalculator.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Spend Calculator</a></li>
+                       
+                      </ul>
+                       </div>
+                      
+                  </li>
+                 
+                 
+                </li>
+                
+                <li id="dropdown" class="mb-1">
+                  <a
+                    class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-900 rounded"
+                    href="#"
+                    >PRODUCTS
+                    <span class="material-icons md-24 blue900 ">
+                      keyboard_arrow_down
+                      </span></a
+                  > 
+                  <div id="dropdown-menu"
+                      class="right-0 p-2 mt-0 bg-white rounded-md shadow lg:absolute"
+                      :class="{'hidden':!isOpen'flex flex-col':isOpen}"
+                      @click.away="isOpen = false">
+                      <ul  class="space-y-2 lg:w-48">
+                        <li>
+                          <a href="dealers.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Dealers</a></li>
+                          <li><a href="enterprise.html" class="flex p-2 font-medium text-gray-600 rounded-md  hover:bg-gray-100 hover:text-black">Enterprise</a></li>
+          
+                    
+                       
+                      </ul>
+                       </div>
+                </li>
+                <li class="mb-1">
+                  <a
+                    class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-900 rounded"
+                    href="#"
+                    >TESTIMONIALS</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    class="block p-4 text-sm font-semibold text-blue-900 hover:bg-green-50 hover:text-blue-900 rounded"
+                    href="#"
+                    >BOOK A DEMO</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="mt-auto">
+              <div class="pt-6">
+                <a
+                  class="block px-4 py-3 mb-3  text-xs text-center font-semibold leading-none bg-gray-50 text-blue-900 hover:bg-gray-100 rounded-l-xl rounded-t-xl"
+                  href="#"
+                  >Sign In</a
+                ><a
+                  class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-900 hover:bg-blue-900 rounded-l-xl rounded-t-xl"
+                  href="#"
+                  >Sign Up</a
+                >
+              </div>
+              <p class="my-4 text-xs text-center text-gray-400">
+                <span>© 2020 All rights reserved.</span>
+              </p>
+              <div class="text-center">
+                <a class="inline-block px-1" href="#">
+                  <img src="atis-assets/social/facebook.svg" alt="" />
+                </a>
+                <a class="inline-block px-1" href="#">
+                  <img src="atis-assets/social/twitter.svg" alt="" />
+                </a>
+                <a class="inline-block px-1" href="#">
+                  <img src="atis-assets/social/instagram.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+</div>
+
+<!-- photo container -->
+
+
+<div class="container mx-auto px-4 my-auto">
+    <div class="max-w-2xl mx-auto text-center mb-16">
+        <p class="text-gray-500">COMPANY</p>
+        <h2 class="mb-2 text-4xl lg:text-5xl font-bold font-heading">Our team is dedicated to success</h2>
+        <p class="mb-6 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat adipisci, quasi labore necessitatibus cupiditate aut ullam voluptatibus at totam fuga similique suscipit fugit natus, tempore ab dolores dignissimos magnam nulla.</p>
+    </div>
+</div>
+
+    <div class="container mx-auto px-4">
+        <div class="max-w-2xl mx-auto text-center mb-16">
+          
+          
+          <h2 class="mb-2 text-4xl lg:text-5xl font-bold font-heading">
+            AutoFi Team Values
+          </h2>
+          <p class="mb-6 text-gray-500">
+            This is how we work, hire, and measure performance.
+          </p>
+          <div class="inline-block py-1 px-1 bg-white rounded-lg">
+            
+           
+          </div>
+        </div>
+        <div class="flex flex-wrap -mx-4">
+          <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
+            <div class="p-8 bg-white shadow rounded">
+              <h4 class="mb-2 text-2xl font-bold font-heading">We are curious</h4>
+             
+              <p class="mt-3 mb-6 text-gray-500 leading-loose">
+                We question. We ask ourselves “What can we do to make it better?” We value what we learn as much as what we accomplish. We make decisions by challenging ourselves with data and diversity of perspectives.
+              </p>
+              
+             
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
+            <div class="p-8 bg-blue-900 shadow rounded">
+              <h4 class="mb-2 text-2xl font-bold text-white">
+                We are Humble
+              </h4>
+             
+              <p class="mt-3 mb-6 leading-loose text-gray-50">
+                We put our team and customers before ourselves. Success is fleeting–we must earn our bread each day. We are confident to know when we are right, and admit when we are wrong and move forward quickly.
+              </p>
+              
+            </div>
+          </div>
+          <div class="w-full lg:w-1/3 px-4">
+            <div class="p-8 bg-white shadow rounded">
+              <h4 class="mb-2 text-2xl font-bold font-heading">
+                We are Empathetic
+              </h4>
+              
+              <p class="mt-3 mb-6 text-gray-500 leading-loose">
+                We listen. We put ourselves in the shoes of our customers and figure out how to help them win. We do what we say we are going to do and stand by our commitments each day. When we focus on making the customer and team successful, everything else will take care of itself.
+              </p>
+             
+            </div>
+          </div>
+          <div class="flex justify-between md:w-full sm:w-full">
+          <div class=" w-full  md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
+            <div class="p-8 bg-white shadow rounded">
+              <h4 class="mb-2 text-2xl font-bold font-heading">We are Gritty</h4>
+             
+              <p class="mt-3 mb-6 text-gray-500 leading-loose">
+                Each day we show up. We have an unwavering commitment to each other and what brought us together. We plow through when the path forward is unclear. We aren’t afraid to surface problems to learn and grow.
+              </p>
+              
+             
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
+            <div class="p-8 bg-white shadow rounded">
+              <h4 class="mb-2 text-2xl font-bold font-heading">We are Owners</h4>
+             
+              <p class="mt-3 mb-6 text-gray-500 leading-loose">
+                We are proud to have our names on our work. Our team’s challenges are our own. Building something important takes time–we are in this for the long haul. We create our own opportunity.
+              </p>
+              
+             
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="mr-for-radius">
+        <svg
+          class="h-8 md:h-12 lg:h-20 w-full text-gray-50"
+          viewbox="0 0 10 10"
+          preserveaspectratio="none"
+        >
+          <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
+        </svg>
+      </div>
+
+    <!-- Second container -->
+
+    <div class="container my-4 mx-auto px-4">
+        <div class="max-w-2xl mx-auto text-center mb-16">
+          <span class="text-black font-bold"
+            >Members</span
+          >
+          <h2 class="mb-2 text-4xl lg:text-5xl font-bold font-heading">
+            Our Team
+          </h2>
+          <p class="mb-6 text-gray-500">
+            We have assembled a seasoned leadership team across automotive, technology, and finance.
+          </p>
+         
+        </div>
+
+
+
+<div class="w-full  flex flex-row ">
+                <div class="lg:mt-20 w-full md:w-1/2 px-4">
+                  <div class="mb-8 py-6 pl-6 pr-4 shadow rounded bg-white">
+                    <span class="mb-4 inline-block p-3 rounded-lg bg-green-100">
+                      
+                    </span>
+                    <h4 class="mb-2 text-2xl font-bold font-heading">
+                      Lorem ipsum dolor sit amet
+                    </h4>
+                    <p class="text-gray-500 leading-loose">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                  <div class="py-6 pl-6 pr-4 shadow rounded bg-white">
+                    <span class="mb-4 inline-block p-3 rounded-lg bg-green-100">
+                      
+                    </span>
+                    <h4 class="mb-2 text-2xl font-bold font-heading">
+                      Lorem ipsum dolor sit amet
+                    </h4>
+                    <p class="text-gray-500 leading-loose">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:mt-20 px-4">
+                  <div class="mb-8 py-6 pl-6 pr-4 shadow rounded-lg bg-white">
+                    <span class="mb-4 inline-block p-3 rounded bg-green-100">
+                     
+                    </span>
+                    <h4 class="mb-2 text-2xl font-bold font-heading">
+                      Lorem ipsum dolor sit amet
+                    </h4>
+                    <p class="text-gray-500 leading-loose">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                  <div class="py-6 pl-6 pr-4 shadow rounded-lg bg-white">
+                    <span class="mb-4 inline-block p-3 rounded bg-green-100">
+                      
+                    </span>
+                    <h4 class="mb-2 text-2xl font-bold font-heading">
+                      Lorem ipsum dolor sit amet
+                    </h4>
+                    <p class="text-gray-500 leading-loose">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="w-full md:w-1/2 lg:mt-20 px-4">
+                    <div class="mb-8 py-6 pl-6 pr-4 shadow rounded-lg bg-white">
+                      <span class="mb-4 inline-block p-3 rounded bg-green-100">
+                       
+                      </span>
+                      <h4 class="mb-2 text-2xl font-bold font-heading">
+                        Lorem ipsum dolor sit amet
+                      </h4>
+                      <p class="text-gray-500 leading-loose">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+                    <div class="py-6 pl-6 pr-4 shadow rounded-lg bg-white">
+                      <span class="mb-4 inline-block p-3 rounded bg-green-100">
+                        
+                      </span>
+                      <h4 class="mb-2 text-2xl font-bold font-heading">
+                        Lorem ipsum dolor sit amet
+                      </h4>
+                      <p class="text-gray-500 leading-loose">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/2 lg:mt-20 px-4">
+                    <div class="mb-8 py-6 pl-6 pr-4 shadow rounded-lg bg-white">
+                      <span class="mb-4 inline-block p-3 rounded bg-green-100">
+                       
+                      </span>
+                      <h4 class="mb-2 text-2xl font-bold font-heading">
+                        Lorem ipsum dolor sit amet
+                      </h4>
+                      <p class="text-gray-500 leading-loose">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+                    <div class="py-6 pl-6 pr-4 shadow rounded-lg bg-white">
+                      <span class="mb-4 inline-block p-3 rounded bg-green-100">
+                        
+                      </span>
+                      <h4 class="mb-2 text-2xl font-bold font-heading">
+                        Lorem ipsum dolor sit amet
+                      </h4>
+                      <p class="text-gray-500 leading-loose">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+              </div>
+    </div>
+    <div class="mr-for-radius">
+        <svg
+          class="h-8 md:h-12 lg:h-20 w-full text-gray-50"
+          viewbox="0 0 10 10"
+          preserveaspectratio="none"
+        >
+          <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
+        </svg>
+      </div>
+<!-- Third container -->
+              <div class="flex flex-wrap m-10">
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
+                  <div class="p-8 bg-white shadow rounded">
+                    <h4 class="mb-2 text-2xl font-bold font-heading">News</h4>
+                    
+                    <p class="mt-3 mb-6 text-gray-500 leading-loose">
+                        Learn more about what the national press and the greater automotive industry are saying about AutoFi and our game-changing platform.
+                    </p>
+                    <a
+                        class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-blue-900 hover:bg-blue-900 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
+                        href="news.html"
+                        >VIEW OUR NEWS </a>
+                    
+                   
+                  </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
+                    <div class="p-8 bg-white shadow rounded">
+                      <h4 class="mb-2 text-2xl font-bold font-heading">                      Ready to work with us?</h4>
+
+                      <p class="mt-3 mb-6 text-gray-500 leading-loose">
+                        The AutoFi team has grown significantly over the last 12 months and we have several exciting open roles across the organization.
+                      </p>
+                      <a
+                        class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-blue-900 hover:bg-blue-900 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
+                        href="careers.html"
+                        > VIEW OPEN POSITIONS</a>
+                     
+                      
+                     
+                    </div>
+                  </div>
+                </div>
+
+        
 </body>
 </html>
