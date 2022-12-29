@@ -46,13 +46,16 @@
                 >START</a
               >
             </li>
-            <li id="dropdown" class="relative" x-data="{isOpen:false}">
-              <button  @click="isOpen=!isOpen"  class=" block text-sm font-bold outline-none  focus:outline-none  text-blue-900 " href="#">
+
+
+            
+            <li id="dropdown" class="relative" >
+              <button    class=" block text-sm font-bold outline-none  focus:outline-none  text-blue-900 " href="#">
                COMPANY </button>
                 
               
               <div id="dropdown-menu"
-                class="right-0 p-2 mt-0 bg-white rounded-md shadow-xl lg:absolute"
+                class="absolute right-0 p-2 mt-0 bg-white rounded-md shadow-xl "
                 :class="{'hidden':!isOpen'flex flex-col':isOpen}"
                 @click.away="isOpen = false">
                 <ul  class="space-y-2 lg:w-48">

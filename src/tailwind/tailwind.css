@@ -41,15 +41,20 @@
 }
 
 #dropdown-menu {
-  
   display: none;
-  
-}
 
-#dropdown:hover #dropdown-menu  {
+  }
+
+ #dropdown:hover #dropdown-menu  {
   z-index: 999;
-
+  
+    visibility: visible;
   display: block;
+  position: absolute;
+ 
+    top: 100%;
+    
+
 }
 
 /* Rules for sizing the icon. */
